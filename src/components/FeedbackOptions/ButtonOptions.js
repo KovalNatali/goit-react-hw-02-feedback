@@ -1,8 +1,9 @@
 import propTypes from 'prop-types';
+import { Options } from './ButtonOptions.styled';
 
 export const ButtonOptions = ({onLeaveFeedback}) => {
         return (
-            <div>
+            <Options>
                 <button onClick={evt => {
           onLeaveFeedback(evt.target.value);
         }}
@@ -16,7 +17,7 @@ export const ButtonOptions = ({onLeaveFeedback}) => {
           onLeaveFeedback(evt.target.value);
         }} value="bad">
         Bad</button>
-            </div>
+            </Options>
 
         )
     }
